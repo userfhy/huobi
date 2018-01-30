@@ -67,7 +67,6 @@ func buildUI(sinps []float64, Text string) map[string]*urlWidgets{
         ui.Render(ui.Body)
     })*/
 
-
     // ui.Loop()
 
     return widgets
@@ -132,14 +131,7 @@ func main()  {
                 }
             }
 
-/*            if  _, ok := resMap["subbed"];ok  {
-                var resStruct common.ResStruct
-                json.Unmarshal(res, &resStruct)
-                //resStruct.Status
-//              fmt.Println(resStruct)
-            }*/
-
-            if  _, ok := resMap["ch"];ok  {
+            if _, ok := resMap["ch"];ok  {
                 var resStruct common.ResStruct
                 json.Unmarshal(res, &resStruct)
 
@@ -148,7 +140,6 @@ func main()  {
 
                 showUi(slice1, resStruct)
             }
-
         }
     }
 }
